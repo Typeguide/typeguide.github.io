@@ -22,6 +22,10 @@
     max-width: 800px; }
   .guide-one section {
     clear: both; }
+    .guide-one section:after {
+      content: '';
+      display: table;
+      clear: both; }
   .guide-one h1 {
     font-family: "kepler-std-semicondensed-cap", serif;
     font-weight: 500;
@@ -33,6 +37,24 @@
   .guide-one p.intro {
     font-size: 1.2em;
     padding: 0.5em 0 1em 0; }
+    @media screen and (max-width: 768px) {
+      .guide-one p.intro {
+        padding: 0.5em 0 0 0; } }
+  .guide-one figure {
+    display: block;
+    padding: 1em 0 1.5em 0; }
+    .guide-one figure:after {
+      content: '';
+      display: table;
+      clear: both; }
+    .guide-one figure img {
+      max-width: 100%; }
+    .guide-one figure figcaption {
+      display: block;
+      font-size: 0.9em;
+      padding: 1em 0;
+      border-bottom: 2px solid #ACACAC;
+      font-style: italic; }
   .guide-one blockquote {
     margin: 0.3em 0 0 0;
     float: left;
