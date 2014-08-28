@@ -1,0 +1,59 @@
+/*
+--------------------------
+ Gude Styles: High Contrast
+--------------------------
+*/
+.guide-one {
+  font-family: "kepler-std", serif;
+  font-size: 20px;
+  color: #353535;
+  padding: 40px 0;
+  /*
+  --------------------------
+   Layout
+  --------------------------
+  */
+  /*
+  --------------------------
+   Typography
+  --------------------------
+  */ }
+  .guide-one .container {
+    max-width: 800px; }
+  .guide-one section {
+    clear: both; }
+  .guide-one h1 {
+    font-family: "kepler-std-semicondensed-cap", serif;
+    font-weight: 500;
+    font-size: 3em;
+    text-align: left; }
+  .guide-one p.column {
+    padding-left: 0;
+    padding-right: 0; }
+  .guide-one p.intro {
+    font-size: 1.2em;
+    padding: 0.5em 0 1em 0; }
+  .guide-one blockquote {
+    margin: 0.3em 0 0 0;
+    float: left;
+    padding: 0.5em 30px 0.5em 0; }
+    @media screen and (max-width: 768px) {
+      .guide-one blockquote {
+        padding: 1.5em 0.5em;
+        margin: 0; } }
+    .guide-one blockquote p:first-child {
+      border-top: 4px solid #E85656;
+      padding-top: 0.5em; }
+    .guide-one blockquote p {
+      margin: 0;
+      padding: 0;
+      border: none;
+      font-size: 1.2em;
+      font-weight: 500; }
+      @media screen and (max-width: 768px) {
+        .guide-one blockquote p {
+          padding: 0; } }
+    .guide-one blockquote span.author {
+      display: block;
+      padding-top: 1em;
+      color: #A0A0A0; }

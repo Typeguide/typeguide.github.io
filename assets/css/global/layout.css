@@ -9,7 +9,7 @@
   overflow: hidden; }
 
 .row {
-  padding: 0 20px; }
+  padding: 0 5px; }
 
 .column {
   box-sizing: border-box;
@@ -39,6 +39,14 @@
     width: 60%; }
   .column.four-fifths {
     width: 80%; }
+  .column.one-sixth {
+    width: 16.66667%; }
+  .column.five-sixths {
+    width: 83.33333%; }
+  .column.left {
+    float: left; }
+  .column.right {
+    float: right; }
   @media screen and (max-width: 768px) {
     .column {
       display: block;

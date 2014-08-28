@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  
+  <!-- Stylesheets -->
+  <link rel='stylesheet' href='../assets/css/normalize.css'>
+<link rel='stylesheet' href='../assets/css/styles.css'>
+
+  <!-- Javascript -->
+  <script src='../assets/js/prefixfree.min.js'></script>
+
+  <!-- Fonts -->
+  <script type="text/javascript" src="//use.typekit.net/rii8prd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+  <title>Typeguide - A collection of web typography</title>
+  
+</head>
+<body>
+<div class="guide-one">
+  <div class="container">
+    <div class="row">
+      <div class="column full">
+        <h1>Kidnapped Children Narrowly Escape Fire in Ginger House</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column full">
+        <p class="intro">Hard by a great forest dwelt a poor wood-cutter with his wife and his two children. The boy was called Hansel and the girl Gretel. He had little to bite and to break, and once when great dearth fell on the land, he could no longer procure even daily bread.</p>
+        <section>
+          <blockquote class="column one-third left">
+            <p>Tomorrow morning we will take the children out into the forest to where it is the thickest.</p>
+            <span class="author">&ndash; The Mother</span>
+          </blockquote>
+          <p class="column two-thirds right">&#39;I&#39;ll tell you what, husband,&#39; answered the woman, &#39;early tomorrow morning we will take the children out into the forest to where it is the thickest; there we will light a fire for them, and give each of them one more piece of bread, and then we will go to our work and leave them alone. They will not find the way home again, and we shall be rid of them.&#39;</p>
+        </section>
+        <p class="column two-thirds right">&#39;No, wife,&#39; said the man, &#39;I will not do that; how can I bear to leave my children alone in the forest?&mdash;the wild animals would soon come and tear them to pieces.&#39; &#39;O, you fool!&#39; said she, &#39;then we must all four die of hunger, you may as well plane the planks for our coffins,&#39; and she left him no peace until he consented. &#39;But I feel very sorry for the poor children, all the same,&#39; said the man.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Body JS -->
+
+</body>
+</html>
